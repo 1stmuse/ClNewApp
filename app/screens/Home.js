@@ -74,7 +74,7 @@ const Home = ({ navigation }) => {
         </View>
       )}
       <View style={styles.pagination}>
-        <Pagination page={pageNumber} setPage={setPageNumber} />
+        <Pagination page={pageNumber} setPage={setPageNumber} dataLength={news.length} />
       </View>
     </View>
   );

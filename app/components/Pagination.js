@@ -3,7 +3,7 @@ import { View, StyleSheet } from "react-native";
 import colors from "../utils/colors";
 import AppButton from "./AppButton";
 
-const Pagination = ({ page, setPage }) => {
+const Pagination = ({ page, setPage, dataLength }) => {
   const onChnagePage = (type) => {
     if (type === "next") {
       setPage(page + 1);
@@ -25,6 +25,7 @@ const Pagination = ({ page, setPage }) => {
         title="NEXT"
         buttonStyle={styles.buttonStyle}
         onPress={() => onChnagePage("next")}
+        disabled={dataLength === 0}
       />
     </View>
   );
