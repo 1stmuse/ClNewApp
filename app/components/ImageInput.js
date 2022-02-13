@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { API_KEY } from "@env";
 import { StyleSheet } from "react-native";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import * as ImagePicker from "react-native-image-picker";
 
 import colors from "../utils/colors";
@@ -27,18 +26,7 @@ function ImageInput({ onChangeImage, btnTitle }) {
       .catch((err) => {
         setUploading(false);
       });
-    // try {
-    //   const res = await axios.post(
-    //     `https://api.imgbb.com/1/upload?key=${API_KEY}`,
-    //     data,
-    //     {
-    //       headers: { "Content-Type": "multipart/form-data" },
-    //     }
-    //   );
-    //   console.log("mainImage", res.data.url);
-    // } catch (error) {
-    //   console.log("error uploading", error);
-    // }
+
   };
 
   const selectImage = async () => {
@@ -75,7 +63,7 @@ function ImageInput({ onChangeImage, btnTitle }) {
 
 const styles = StyleSheet.create({
   container: {
-    // alignItems: "center",
+    
     backgroundColor: colors.primary,
     marginVertical: 10,
   },

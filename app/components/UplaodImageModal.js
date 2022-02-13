@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Text, Modal } from "react-native";
+import { View, StyleSheet, Modal } from "react-native";
 import { Card } from "react-native-elements";
 import { uploadNewsImage } from "../common/api";
 import colors from "../utils/colors";
@@ -9,10 +9,9 @@ import UploadImageForm from "./UploadImageForm";
 
 const UplaodImageModal = ({ show, closeModal, newsId }) => {
   const [imgUri, setImgUri] = useState("");
+
   const upload = async (link) => {
-    // console.log(link);
     const res = await uploadNewsImage({ newsId, image: link });
-    // console.log(res);
     if (res.status === 201) {
       setImgUri(res.data.image);
       showToast("success", "Image uploaded");

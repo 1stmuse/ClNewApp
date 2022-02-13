@@ -4,7 +4,7 @@ import {
   editComment,
   deleteComment,
 } from "../common/api";
-import { getById, getExistingIndex, showToast } from "../utils/helper";
+import { getExistingIndex, showToast } from "../utils/helper";
 
 export const comments = {
   state: {

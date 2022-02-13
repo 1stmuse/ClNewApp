@@ -3,7 +3,7 @@ import { View, StyleSheet, Text } from "react-native";
 import colors from "../utils/colors";
 import { HEADER_TITLE_SIZE } from "../utils/constants";
 
-const Header = ({ goBack, title, style, RightIcon }) => {
+const Header = ({ title, style, RightIcon }) => {
   return (
     <View style={[styles.container, { ...style }]}>
       <View />

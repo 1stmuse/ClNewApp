@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderColor: "#223e4b",
     borderWidth: StyleSheet.hairlineWidth,
-    // padding: 8,
-    // height: 50,j
+   
   },
 });

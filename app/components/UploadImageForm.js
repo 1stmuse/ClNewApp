@@ -1,12 +1,9 @@
-import React, { useRef, useState } from "react";
-import { View, StyleSheet, Text, ScrollView, Image } from "react-native";
+import React from "react";
+import { View, StyleSheet, Image } from "react-native";
 import ImageInput from "./ImageInput";
 
 const UploadImageForm = ({ imageLink, imageSrc, btnTitle }) => {
-  // const [imageUri, setImageUri] = useState("");
-
   const onAddImage = (uri) => {
-    // setImageUri(uri);
     imageLink(uri);
   };
 

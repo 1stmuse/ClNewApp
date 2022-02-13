@@ -19,14 +19,7 @@ const models = {
 
 const store = init({
   models,
-  plugins: [
-    loading(),
-    persistPlugin(persistConfig),
-    // persist({
-    //   key: "root",
-    //   storage,
-    // }),
-  ],
+  plugins: [loading(), persistPlugin(persistConfig)],
 });
 
 export default store;

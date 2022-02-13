@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, StyleSheet, Text, KeyboardAvoidingView } from "react-native";
-import { Card, Image } from "react-native-elements";
+import { Card } from "react-native-elements";
 import AppButton from "../components/AppButton";
 import TextInput from "../components/TextInput";
 import { DEVICE_WIDTH } from "../utils/constants";

@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet, ActivityIndicator, Pressable } from "react-native";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 import { Card, Image, Text } from "react-native-elements";
 import { DEFAULT_IMAGE } from "../utils/constants";
@@ -83,12 +83,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     flexDirection: "row",
-    // backgroundColor: colors.white,
-    // paddingHorizontal: 20,
-    // justifyContent: "space-between",
-    // paddingVertical: 10,
-    // marginBottom: 20,
-    // elevation: 5,
   },
   imageContainer: {
     width: "40%",
@@ -108,7 +102,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     marginTop: 10,
-    // justifyContent: "space-between",
   },
   btn: {
     flex: 1,

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { View, StyleSheet, ScrollView, Modal } from "react-native";
+import React, { useEffect } from "react";
+import { View, StyleSheet, ScrollView } from "react-native";
 
 import { SliderBox } from "react-native-image-slider-box";
 import { useDispatch, useSelector } from "react-redux";
@@ -62,7 +62,7 @@ const News = ({ route, navigation }) => {
             >
               Comments..
             </Text>
-            {/* <View> */}
+
             <AppButton
               buttonStyle={{ backgroundColor: "transparent" }}
               textStyle={{ color: colors.primary }}
@@ -71,7 +71,6 @@ const News = ({ route, navigation }) => {
                 navigation.navigate("newComment", { newsId: item.id })
               }
             />
-            {/* </View> */}
           </View>
           {!comments.length ? (
             <View>
@@ -82,16 +81,6 @@ const News = ({ route, navigation }) => {
               {comments.map((com) => <Comment data={com} />).reverse()}
             </View>
           )}
-          {/* <Comment
-            data={{
-              name: "Muse",
-              createdAt: "2022-02-01T09:31:24.670Z",
-              avatar: "http://lorempixel.com/640/480/fashion",
-              newsId: 10,
-              id: 15,
-              comment: "what is this",
-            }}
-          /> */}
         </View>
       </View>
     </ScrollView>

@@ -39,7 +39,6 @@ export const news = {
         const news = await api.deleteNews(data.newsId);
         dispatch.news.deleteNews(news);
       } catch (error) {
-        console.log(error, "delete error");
         showToast("error", error);
       }
     },
@@ -52,7 +51,6 @@ export const news = {
       }
     },
     async editNewsAsync(data) {
-      // console.log(data, "body from input");
       try {
         const news = await api.editNews(data.newsId, data.body);
         dispatch.news.edit(news);

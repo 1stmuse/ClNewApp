@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet, Text, Modal } from "react-native";
+import { View, StyleSheet, Text} from "react-native";
 import { Card } from "react-native-elements";
 import { useDispatch, useSelector } from "react-redux";
 import AppButton from "../components/AppButton";
@@ -14,11 +14,9 @@ const NewNews = ({ navigation, route }) => {
   const [error, setError] = useState("");
   const isLoaading = loadingState.models.news;
   const { data } = route.params;
-  // console.log(data);
+
   const [author, setAuthor] = useState("");
   const [title, setTitle] = useState("");
-
-  // console.log(loadingState);
 
   const closeModal = () => setUploadImg(false);
 
